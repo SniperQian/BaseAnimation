@@ -81,6 +81,9 @@ public class LoadingDialog extends Dialog {
 		mAnim.setRepeatCount(Animation.INFINITE);
 		mAnim.setRepeatMode(Animation.RESTART);
 		mAnim.setStartTime(Animation.START_ON_FIRST_FRAME);
+		//匀速转动的代码
+		LinearInterpolator lin = new LinearInterpolator();
+		mAnim.setInterpolator(lin);
 	}
 
 	@Override
